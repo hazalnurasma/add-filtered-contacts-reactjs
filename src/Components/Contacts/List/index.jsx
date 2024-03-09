@@ -30,7 +30,7 @@ function List({ contacts }) {
 
   return (
     <div className='list'>
-        <h2>Contact App</h2>
+        <h2 className='cont'>Contact App</h2>
         <div className="bck">
             <h3>You can filter your contact from here:</h3>
             <input 

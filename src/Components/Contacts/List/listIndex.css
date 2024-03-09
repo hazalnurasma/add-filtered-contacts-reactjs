@@ -3,6 +3,14 @@ h2 {
     font-weight: 450;
 }
 
+.cont {
+    margin-top: -3rem;
+}
+
+h3 {
+    font-weight: 300;
+}
+
 .body {
     display: flex;
     flex-direction: column;
@@ -58,4 +66,5 @@ li {
     padding: 20px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    box-shadow: 2px 2px 10px 2px grey;
 }
