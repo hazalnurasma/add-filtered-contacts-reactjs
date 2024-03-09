@@ -1,0 +1,42 @@
+/* Class assigned to popover wrapper */
+.driver-popover {
+    background-color: rgb(140, 140, 232);
+}
+
+/* Arrow pointing towards the highlighted element */
+.driver-popover-arrow {
+    background-color: rgba(142, 224, 244, 0.689);
+}
+
+/* Title and description */
+.driver-popover-title {color:rgb(247, 189, 198);}
+.driver-popover-description {color:rgb(234, 234, 234);}
+
+/* Close button displayed on the top right corner */
+.driver-popover-close-btn {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+/* Footer of the popover displaying progress and navigation buttons */
+.driver-popover-footer {}
+.driver-popover-progress-text {
+    color: rgb(104, 33, 83);
+    font-weight: 500;
+    font-size: 14px;
+}
+.driver-popover-prev-btn {
+    background-color: aqua;
+}
+.driver-popover-next-btn {
+
+}
+
+/* info button */
+
+.info {
+    float: left;
+    margin-top: 0.6rem;
+    margin-left: 14vw;
+    position: absolute;
+}
