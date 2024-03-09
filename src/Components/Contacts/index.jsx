@@ -54,43 +54,15 @@ function Contacts() {
         setStart(!start);
     };
 
-    useEffect(() => {
-
-        const driverObj = driver({
-          showProgress: true,
-          steps: [
-            {
-                popover: {
-                    title:"Welcome!",
-                    description: "This is an app to add contacts and filtered them!",
-                    side:"over",
-                }
-            },
-            {
-              element: ".list",
-              popover: {
-                title: " Filtered Contacts",
-                description: "You can filter your contacts here",
-                side: "top",
-              }
-            },
-            {
-              element: ".form",
-              popover: {
-                title: "Add Contact",
-                description: "Add contacts from here!",
-                side: "left",
-              }
-            },
-          ]
-        });
-        driverObj.drive();
-      });
-
     return (
         <div>
-            <List contacts={contacts}/>
-            <Form addContact={setContacts} contacts={contacts}/>
+            <div className="icons">
+                <FaArrowRight className='arrow'/>
+                <BsInfoCircle className="info" onClick={startTour} />
+            </div>
+
+            <List className="list" contacts={contacts} />
+            <Form className="form" addContact={setContacts} contacts={contacts} />
         </div>
     )
 }
