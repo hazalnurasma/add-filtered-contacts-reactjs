@@ -27,11 +27,11 @@ form {
     font-size: 16px;
     color:white;
     border: 1px solid white;
-    background-color: rgb(167, 54, 54);
+    background-color: rgb(140, 140, 232);
     transition: 0.5s;
 }
 
 .add-btn:hover {
     transform: translateY(-0.1rem);
-    background-color: rgb(110, 35, 35);
+    background-color: rgb(103, 103, 202);
 }
