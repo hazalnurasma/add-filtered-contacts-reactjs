@@ -37,7 +37,7 @@ function Contacts() {
               element: ".form",
               popover: {
                 title: "Add Contact",
-                description: "Add contacts from here.",
+                description: "Add contacts from here!",
                 side: "left",
               }
             },
