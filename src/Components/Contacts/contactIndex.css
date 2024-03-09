@@ -10,7 +10,7 @@
 
 /* Title and description */
 .driver-popover-title {color:rgb(247, 189, 198);}
-.driver-popover-description {color:white;}
+.driver-popover-description {color:rgb(234, 234, 234);}
 
 /* Close button displayed on the top right corner */
 .driver-popover-close-btn {
@@ -33,10 +33,48 @@
 }
 
 /* info button */
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 1rem;
+}
+
+.arrow {
+    margin-top: 0.3rem;
+    animation: arrowAnimation 1s infinite alternate; /* alternatif olarak sağa sola hareket */
+}
+
+@keyframes arrowAnimation {
+    0% {
+        transform: translateX(0); /* Başlangıç pozisyonu */
+    }
+    100% {
+        transform: translateX(20px); /* Sağa kaydırma mesafesi */
+    }
+}
+
 
 .info {
+    width: 1.4rem;
+    height: 1.4rem;
     float: left;
-    margin-top: 0.6rem;
-    margin-left: 14vw;
-    position: absolute;
+    margin-left: 2rem;
+    /* position: relative; */
+    animation: pulse 1s infinite;
+    cursor: pointer;
+    border: 3px solid rgb(242, 124, 111);
+    border-radius: 15px;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1); /* Yarı noktada bir ölçeklendirme yaparak hareket ekliyoruz */
+    }
+    100% {
+        transform: scale(1);
+    }
 }
