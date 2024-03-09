@@ -22,7 +22,7 @@ function Contacts() {
                 steps: [
                     {
                         popover: {
-                            title: "Welcome to Contact App!",
+                            title: " Welcome to Contact App!",
                             description: "This is an app that enables you to add contacts and search them by filtered!",
                             side: "over",
                         }
