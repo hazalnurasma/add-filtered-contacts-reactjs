@@ -35,8 +35,26 @@
 /* info button */
 
 .info {
+    width: 1.4rem;
+    height: 1.4rem;
     float: left;
-    margin-top: 0.6rem;
-    margin-left: 14vw;
-    position: absolute;
+    margin-top: -2rem;
+    margin-left: 44vw;
+    position: fixed;
+    animation: pulse 1s infinite;
+    cursor: pointer;
+    border: 3px solid salmon;
+    border-radius: 15px;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1); /* Yarı noktada bir ölçeklendirme yaparak hareket ekliyoruz */
+    }
+    100% {
+        transform: scale(1);
+    }
 }
