@@ -27,31 +27,6 @@ function List({ contacts }) {
         setDivHeight('auto'); // input değiştiğinde div yüksekliği otomatik olacak
     };
 
-    useEffect(() => {
-
-        const driverObj = driver({
-          showProgress: true,
-          steps: [
-            {
-              element: "h2",
-              popover: {
-                title: "✨ Welcome to Arçelik AI App Wizard!",
-                description: "Start exploring our site so we can serve you better.",
-                side: "top",
-              }
-            },
-            {
-              element: ".input",
-              popover: {
-                title: "Step",
-                description: "You can watch your progress here.",
-                side: "center",
-              }
-            },
-          ]
-        });
-        driverObj.drive();
-      });
 
   return (
     <div className='list'>
