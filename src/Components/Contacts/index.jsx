@@ -28,16 +28,16 @@ function Contacts() {
             {
               element: ".list",
               popover: {
-                title: "✨ Welcome to Arçelik AI App Wizard!",
-                description: "Start exploring our site so we can serve you better.",
+                title: " Filtered Contacts",
+                description: "You can filter your contacts here",
                 side: "top",
               }
             },
             {
               element: ".form",
               popover: {
-                title: "Step",
-                description: "You can watch your progress here.",
+                title: "Add Contact",
+                description: "Add contacts from here.",
                 side: "left",
               }
             },
