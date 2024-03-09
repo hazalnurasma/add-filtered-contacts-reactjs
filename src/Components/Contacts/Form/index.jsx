@@ -39,7 +39,7 @@ function Form({ addContact, contacts }) {
 
   return (
     <>
-        <form onSubmit={onSubmit}>
+        <form className='form' onSubmit={onSubmit}>
 
             <div className="inputs">
                 <h2>Add Contact</h2>

@@ -3,6 +3,7 @@ import List from './List';
 import Form from './Form';
 import "./contactIndex.css";
 import { BsInfoCircle } from "react-icons/bs";
+import { FaArrowRight } from "react-icons/fa";
 import { driver } from "driver.js";
 import "driver.js/dist/driver.css";
 
@@ -21,8 +22,8 @@ function Contacts() {
                 steps: [
                     {
                         popover: {
-                            title: "Welcome!",
-                            description: "This is an app to add contacts and filter them!",
+                            title: "Welcome to Contact App!",
+                            description: "This is an app that enables you to add contacts and search them by filtered!",
                             side: "over",
                         }
                     },
@@ -30,7 +31,7 @@ function Contacts() {
                         element: ".list",
                         popover: {
                             title: "Filtered Contacts",
-                            description: "You can filter your contacts here",
+                            description: "You can filter your contacts here with their name or phone numbers.",
                             side: "top",
                         }
                     },
@@ -38,7 +39,7 @@ function Contacts() {
                         element: ".form",
                         popover: {
                             title: "Add Contact",
-                            description: "Add contacts from here!",
+                            description: "You can add new contact from here.",
                             side: "left",
                         }
                     },
@@ -50,13 +51,16 @@ function Contacts() {
 
     // info butonuna basıldığında start state'ini true yap
     const startTour = () => {
-        setStart(true);
-    }
+        setStart(!start);
+    };
 
     return (
         <div>
-            {/* BsInfoCircle bileşenine onClick olayını startTour fonksiyonuyla bağlayın */}
-            <BsInfoCircle className="info" onClick={startTour} />
+            <div className="icons">
+                <FaArrowRight className='arrow'/>
+                <BsInfoCircle className="info" onClick={startTour} />
+            </div>
+
             <List className="list" contacts={contacts} />
             <Form className="form" addContact={setContacts} contacts={contacts} />
         </div>
