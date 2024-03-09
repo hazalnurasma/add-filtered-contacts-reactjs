@@ -1,7 +1,6 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState } from 'react';
 import './listIndex.css';
-import { driver } from "driver.js";
-import "driver.js/dist/driver.css";
+
 
 
 function List({ contacts }) {
