@@ -44,6 +44,8 @@ function List({ contacts }) {
                     filtered.map((contacts, index) => <li className="liler" key={index}><b>Name:</b> {contacts.fullname} <br /> <b>Phone Number:</b> {contacts.phoneNumber}</li>)
                 }
             </ul>
+
+            <p>Total contacst: ({filtered.length})</p>
         </div>
 
     </div>

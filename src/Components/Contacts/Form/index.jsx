@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import './formIndex.css';
-import { driver } from "driver.js";
-import "driver.js/dist/driver.css";
 
 
 // 2. yöntem çok sayıda input olması durumunda: 
