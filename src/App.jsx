@@ -6,8 +6,6 @@ function App() {
   return (
     <div className="App">
       <Contacts />
-      <hr></hr>
-      <p>created by Hazal Asma</p>
     </div>
   );
 }
